@@ -54,7 +54,7 @@ If these fail locally, your CI will fail too — always validate locally before 
 
 ## Tier 1 — Foundations
 
-- [ ] **1. Hello World Workflow**
+- [x] **1. Hello World Workflow**
   A workflow triggered on `push` that echoes a message to the log.
   **MVP:** workflow file in `.github/workflows/`; triggers only on push to a specific branch; log clearly shows your custom message; visible green check in Actions tab.
 
