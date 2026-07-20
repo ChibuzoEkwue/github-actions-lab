@@ -1,8 +1,6 @@
 # GitHub Actions Mastery Checklist (50 Projects)
 
-Tick `[x]` as you complete each one. **MVP** = the minimum you must ship for the project to count as "done" — if you can't check every MVP bullet, it's not finished yet.
 
----
 
 ## Next.js Project Setup (use this as your base repo for most exercises)
 
