@@ -1,0 +1,19 @@
+name: Multi-Trigger
+
+on:
+    push:
+    
+    pull_request:
+    
+    workflow_dispatch:
+
+jobs:
+
+    logger:
+
+        runs-on: ubuntu-latest
+
+        steps:
+            
+            - name: Log
+              run: echo Hurray it works 
