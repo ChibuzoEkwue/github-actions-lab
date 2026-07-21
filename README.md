@@ -58,15 +58,15 @@ If these fail locally, your CI will fail too — always validate locally before 
   A workflow triggered on `push` that echoes a message to the log.
   **MVP:** workflow file in `.github/workflows/`; triggers only on push to a specific branch; log clearly shows your custom message; visible green check in Actions tab.
 
-- [ ] **2. Multi-Trigger Workflow**
+- [x] **2. Multi-Trigger Workflow**
   One workflow that responds to `push`, `pull_request`, and manual `workflow_dispatch`.
   **MVP:** all three triggers work independently; `workflow_dispatch` accepts at least one custom `input` and prints it in the log; Actions UI shows the correct "triggered by" event for each run.
 
-- [ ] **3. Node.js CI Pipeline**
+- [x] **3. Node.js CI Pipeline**
   Installs dependencies and runs the test suite on every push.
   **MVP:** uses `actions/setup-node`; runs `npm install` + `npm test`; caching configured with `actions/cache` (or `cache: 'npm'` in setup-node); a broken test fails the run.
 
-- [ ] **4. Linting Workflow**
+- [x] **4. Linting Workflow**
   Runs ESLint/Prettier checks on every PR.
   **MVP:** runs on `pull_request`; a deliberate lint violation fails the run; fixing it passes on the same PR; no lint errors are silently swallowed.
 
